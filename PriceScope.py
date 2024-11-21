@@ -8,7 +8,7 @@ from telebot import types
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
-uri = "mongodb+srv://joyceaparecida20152:123@cluster.ox6qa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster"
+uri = "mongodb+srv://<UserName>:<Password>@cluster.ox6qa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster"
 
 client = MongoClient(uri, server_api=ServerApi('1'))
 
@@ -22,11 +22,11 @@ database = client.MercadoLivre
 
 alerta_collection = database['alerta']
 
-API_TOKEN = '7007789306:AAHibV805WAtlDhUEhpL6D09MICehvRcfNk'
+API_TOKEN = '<API_KEY>'
 bot = telebot.TeleBot(API_TOKEN)
 
-API_KEY = 'AIzaSyCQy0r07Wyd55aPoVnpDw7ZX-vXfoV31fA'
-CSE_ID = '14e555ad6844e4681'
+API_TOKEN = '<API_KEY>'
+CSE_ID = '<ID>'
 
 COMANDOS_VALIDOS = ['/start', '/ajuda', '/bertoti', '/opcao1', '/opcao2', '/opcao3', '/opcao4', '/opcao5']
 
